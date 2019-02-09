@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		.sl
+		{
+			position:fixed;
+			left: 0;
+			top: 0;
+			width:0;
+			height: 100%;
+			transition:0.5s;
+			overflow-x: hidden;
+			background-color: #333;
+			color:white;
+		}
+		#frm
+		{
+			width:500px;
+			height: 100px;
+			background-color: #f1f1f1;
+			padding:20%;
+			position: fixed;
+			left:254px;
+			display: none;
+		}
+		.frm1
+		{
+			width: 450px;
+			height: 250px;
+			background-color: #ffffff;
+			padding:;
+			position:absolute;
+			bottom: 250px;
+
+		}
+		input 
+		{
+			width:200px;
+			height: 30px;
+			border-radius: 2px;
+			border-style: none;
+			font-size:15px;
+			
+		}
+	    #txt1,#txt2
+	    {
+	    	position: absolute;
+	    	left:120px;
+	     }
+	   /* #txt2
+	    {
+	    	position: absolute;
+	    	left:120px;
+	    	
+	    }*/
+	</style>
+</head>
+<body>
+    <div class="sl" id="sli">
+    	<a onclick="log()" style="font-size:20px;text-align: center;cursor:pointer;">Login</a>
+    </div>
+    <div style="background-color:#333;color:white;padding:10px;width:30px;height:100%;border-radius:10px;text-align:center;">
+    <i onclick="pp()" class="fa fa-bars"></i>
+    </div>
+    <form id="frm">
+    	<div class="frm1" id="frmm1">
+          <input type="text" id="txt1" placeholder="Username.." ></input><br><hr style="width:200px;position: absolute;left:50px;bottom:158px;"><br>
+          <input type="password" id="txt2" placeholder="password..."></input><hr style="width:200px;position: absolute;left: 50px;bottom:88px;"><br><br>
+          <button onclick="login()">Submit</button>
+        </div>
+   </form> 
+</body>
+<script type="text/javascript">
+	function pp()
+	{
+		document.getElementById("sli").style.width="250px";
+	}
+	function log()
+	{
+		document.getElementById("frm").style.display="block";
+	}
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		window.onload=function ()
+		 {
+			let a=document.getElementById("head1");
+			a.addEventListener("click",callme);
+			a.addEventListener("mouseout",overme);
+			function callme()
+			{
+				this.style.color="green";
+				alert("I'm Clicked");
+
+			}
+			function overme()
+			{
+				this.style.color="red";
+				alert("I'm Out");
+			}
+		}
+	</script>
+</head>
+<body>
+      <h1 id="head1">Welcome</h1>
+</body>
+</html>

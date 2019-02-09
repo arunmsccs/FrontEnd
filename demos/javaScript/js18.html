@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var ip="RamS\nource Welcome to \n our C\nountry";
+		var r=/ou/gm;
+		var op=ip.match(r);
+		alert(op);
+		
+		var ip1="RamSOurce Welcome to our Country";
+		var r1=RegExp("our","g");
+		var op1=ip1.search(r1);
+		alert(op1);
+		
+		var ip2="RamSource Welcome to our Country";
+		var r2=/Country/i;
+		var op2=ip2.replace(r2,"Nation");
+		alert(op2);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

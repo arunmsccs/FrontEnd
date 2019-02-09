@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.bar
+		{
+			width: 100%;
+			height: 30px;
+			background-color: #333;
+		}
+		.bar i
+		{
+			width: 100px;
+			height: 100px;
+			color: white;
+			padding-left: 20px;
+			padding-top: 3px;
+		}
+		.animate
+		{
+			width:20%;
+			height: 600px;
+			display: flex;
+			position: absolute;
+			background-color: #333;
+			left:80%;
+			transform: translateX(100%);
+			transition: transform 0.3s ease-in;
+
+		}
+		/*.animate1
+		{
+			width:20%;
+			height: 600px;
+			display: flex;
+			padding-left: 100px;
+			position: absolute;
+			flex-direction: row;
+			background-color: #333;
+        }*/
+		body
+		{
+           overflow-x: hidden;
+		}
+		.bar i:hover .animate
+		{
+            display: block;
+			transform: translateX(100%);
+			transition: transform 0.3s ease-in;
+		}
+		</style>
+</head>
+<body>
+   <div class="bar">
+        <i style="font-size:25px;" class="fa fa-bars"></i>
+   </div>
+   <div class="animate">
+   </div>
+   <div class="animate1">
+   </div>
+</body>
+</html>

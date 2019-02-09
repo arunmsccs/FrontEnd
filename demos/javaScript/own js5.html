@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	*
+	{
+		box-sizing: border-box;
+	}
+	body
+	{
+		background-color: #f1f1f1;
+	}
+	  #frm
+	  {
+	  	background-color: #ffffff;
+        margin: 100px auto;
+        font-family: Raleway;
+        padding: 40px;
+        width: 70%;
+        min-width: 300px;
+	  }
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+.tab
+{
+	display: none;
+}	
+h1 {
+  text-align: center;  
+}
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+	</style>
+</head>
+<body>
+   <form id="frm">
+   	<h1>login Form</h1>
+      <div class="tab">
+           <input id="txt1" placeholder="UserName..." />
+      </div>
+      <div class="tab">
+           <input id="txt2" type="password" placeholder="PassWord..." />
+      </div><br>
+      <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+      	
+      </div>
+   </form>
+</body>
+<script type="text/javascript">
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+}
+function nextPrev(n)
+{
+	var x=document.getElementsByClassName("tab");
+	x[n].style.display="block";
+}
+
+</script>
+</html>

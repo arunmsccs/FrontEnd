@@ -1,0 +1,61 @@
+//--- Event Handling ---\\
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+           	function loadme() 
+           	{
+           		alert("Page is Loaded");
+           	}
+           	function unloadme()
+           	{
+           		alert("Unloaded");
+           	}
+           	function clickme()
+           	{
+           		alert("The Mouse is clicked");
+           	}
+           	function dbclickme()
+           	{
+           		alert("The Mouse is dbclicked");
+           	}
+           	function mouseoverme()
+           	{
+           		alert("The Mouse is Over me");
+           	}
+           	function mousedownme()
+           	{
+           		alert("The Mouse button is down");
+           	}
+           	function mouseupme()
+           	{
+           		alert("The Mouse button is Up");
+           	}
+           	function mouseoutme
+           	{
+           		alert("The Mouse is Out");
+           	}
+           	function resizeme()
+           	{
+           		alert("The Window is Resized");
+           	}
+    </script>
+</head>
+<body onload="loadme()" unload="()" onresize="resizeme()">
+     <div style="background-color: red;width: 200px;height: 200px;" onclick="clickme()">
+     	<h3>Onclick Event</h3>
+     </div>
+     <div style="background-color: red;width: 200px;height: 200px;" ondblclick="dbclickme()">
+     	<h3>On double click Event</h3>
+     </div>
+     <div style="background-color: red;width: 200px;height: 200px;" onmouseover="onmouseover()">
+     	<h3>On double click Event</h3>
+     </div>
+     <div style="background-color: red;width: 200px;height: 200px;" onmousedown="onmousedown()">
+     	<h3>On double click Event</h3>
+     </div>
+     <div style="background-color: red;width: 200px;height: 200px;" onmouseup="onmouseup()">
+     	<h3>On double click Event</h3>
+     </div>
+</body>
+ </html>

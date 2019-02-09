@@ -1,0 +1,22 @@
+.row
+{
+padding-right:0px;
+padding-left:80px;
+}
+.lleftcolumn 
+{   
+    float: left;
+    width:30%;
+}
+.rrightcolumn
+{
+    float: left;
+    width:30%;
+    padding-left: 20px;
+}
+.rright1column
+{
+    float: left;
+    width:30%;
+    padding-left: 20px;
+}

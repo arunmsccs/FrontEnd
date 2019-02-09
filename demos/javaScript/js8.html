@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href="javascript:a()">click me</a>
+    <script type="text/javascript">
+    	function a(){
+    		alert("Hellow World");
+    		mycall(10);
+       	}
+       	function mycall(num)
+       	{
+       		let n=num-1;
+       		if(n>0)
+       		{
+       			document.write("The N values is "+n+"<br>");
+
+       			mycall(n);
+       		}
+       		else
+       		{
+       			alert("Recursion is Complete");
+
+       		}
+       	}
+    </script>
+</body>
+</html>
