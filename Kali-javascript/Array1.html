@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p onclick="leg()" style="cursor: pointer;color:yellow;">Click Me</p>
+<p onclick="ind()" style="cursor: pointer;color:red;">Individual Values Access</p>
+<p onclick="add()" style="cursor: pointer;color:blue;">Add value</p>
+<p onclick="del()" style="cursor: pointer;color:blue;">Delete value</p>
+<script>
+var kali = ["kali", "santhosh", "king", "kingmaker"];
+//Individual Value accessed
+document.getElementById("demo").innerHTML = kali[0]+"<br>"+kali[1]+"<br>"+kali[2]+"<br>"+kali[3];
+//Total Values are accessed
+document.getElementById("demo1").innerHTML=kali;
+function leg()
+ {
+	alert("The Array Length is "+kali.length);
+}
+function ind()
+{
+	var a=prompt("Enter The Index Value","");
+	alert("The Value Of "+a+" is "+""+kali[a]);
+}
+function add()
+{
+	var a=prompt("Enter The New Value","");
+	kali.push(a);
+	document.getElementById("demo1").innerHTML=kali;
+}
+function del()
+{
+	var a=prompt("Which Value You want Delete","");
+	delete kali[a];
+	document.getElementById("demo1").innerHTML=kali;
+}
+</script>
+
+</body>
+</html>

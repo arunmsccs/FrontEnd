@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Screen Responsive</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		.list 
+		{
+			position: fixed;
+			right: 80px;
+		}
+		.list a
+		{
+			text-decoration: none;
+			font-size: 15px;
+			color:white;
+			padding:10px;
+		}
+		.list a:hover
+		{
+			background-color:#f1f1f1;
+			color: black;
+			border-radius:3px;
+		}
+		i
+		{
+			position: fixed;
+			right:40px;
+			width: 40px;
+			height:30px;
+		    text-align: center;
+		    color:#f1f1f1;
+			padding-top: 8px;
+		}
+		i:hover
+		{
+
+			background-color:gray;
+			border-radius:100px;
+			color:black;		
+		}
+		i#icon
+		{
+			display:none;
+		}
+		i#icon:hover .list a
+		{
+           display:block;
+		}
+		
+		@media screen and (max-width:700px)
+		{
+			i#icon
+			{
+				display:block;
+				color:black;
+			}
+			.list a
+			{
+				display: none;
+			}
+		}
+		@media screen and (max-width:800px)
+		{
+			.list  
+			{
+				position: fixed;
+				right:50px;
+			}
+			
+		}
+		.admin
+		{
+			width:100%;
+			height:600px;
+			background-color:#f1f1f1;
+			display:none;
+		}
+		input
+		{
+			padding: 5px;
+			background-color: #f1f1f1;
+			border-style: none;
+			border:1px solid gray;
+			border-radius:5px;
+			
+		}
+
+</style>
+</head>
+<body style="font-family: Bernard MT">
+	<div style="display: flex;position:-webkit-sticky;position:sticky;top:0;box-shadow:0px 5px 7px gray;
+font-size: 20px; background-color:#333;color:#ffffff;height:70px;align-items:center;">
+		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Management
+	    <div class="list" id="list1">
+    	  <a href="#" onclick="menu()">Home</a>
+    	  <a href="#">File</a>
+    	  <a href="#">Records</a>
+    	  <a href="#">Marking</a>
+        </div>
+        <i class="fa fa-bars" id="icon" style="color:white;" onclick="menu()"></i>
+    </div>
+    <div class="admin" id="adm">
+    	<form style="padding: 50px;">Name :
+        	<input type="text" name="name" id="txt1"><br><br>
+        	<input type="text" name="age" id="txt2"><br><br>
+        	<input type="text" name="gender" id="txt3"><br><br>
+        	<input type="text" name="f-name" id="txt4"><br><br>
+        	<input type="text" name="qualification" id="txt5"><br><br>
+        	<input type="text" name="native" id="txt6"><br><br>
+        	<input type="text" name="exam1" id="txt7"><br><br>
+        	<input type="text" name="exam2" id="txt8"><br><br>
+        	<input type="text" name="ndsf" id="txt9"><br><br>
+        	<input type="text" name="dsf" id="txt10"><br><br>
+            <input type="text" name="name" id="txt1"><br><br>
+        	<input type="text" name="age" id="txt2"><br><br>
+        	<input type="text" name="gender" id="txt3"><br><br>
+        	<input type="text" name="f-name" id="txt4"><br><br>
+        	<input type="text" name="qualification" id="txt5"><br><br>
+        	<input type="text" name="native" id="txt6"><br><br>
+        	<input type="text" name="exam1" id="txt7"><br><br>
+        	<input type="text" name="exam2" id="txt8"><br><br>
+        	<input type="text" name="ndsf" id="txt9"><br><br>
+        	<input type="text" name="dsf" id="txt10"><br><br>
+        </form>
+    </div>
+</body>
+    <script type="text/javascript">
+    	function menu()
+    	{
+    		document.getElementById("adm").style.display="block";
+    		//document.getElementById("list1").style.display="block";
+       	}
+    </script>
+</html>

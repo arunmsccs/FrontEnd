@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+   <script type="text/javascript">
+   	var kali={name:"kaliSanthosh",
+            	age:"23",
+            	gender:"male",
+            	fullDetail:function()
+            	{
+            		return this.name+"<br>"+this.age+"<br>"+this.gender;
+               	}
+               };
+               document.getElementById('demo').innerHTML=kali.fullDetail();
+   
+   </script>
+</body>
+</html>
