@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+ {
+  $("#btn1").click(function()
+  {
+    $("#test1").html("<b>Ashwin Balaji</b>");
+  });
+  $("#btn2").click(function()
+  {
+    $("#test2").html("<b>santhosh kali</b>");
+  });
+  $("#btn3").click(function()
+  {
+    $("#test3").val("Santhosh Kali");
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="test1">1............</p>
+<p id="test2">2............</p>
+
+<p>Qualified Employee<input type="text" id="test3" value="Ashwin Balaji"></p>
+
+<button id="btn1">first employee</button>
+<button id="btn2">Second employee</button>
+<button id="btn3">change employee</button>
+
+</body>
+</html>
